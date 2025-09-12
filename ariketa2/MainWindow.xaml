@@ -9,16 +9,16 @@
     <Grid>
         <TextBox x:Name="salida" Margin="33,35,33,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
 
-        <Button x:Name="frase_1" Content="Frase 1" HorizontalAlignment="Left" Margin="33,100,0,0" VerticalAlignment="Top" Width="78"/>
-        <Button x:Name="frase_2" Content="Frase 2" HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top" Width="78"/>
-        <Button x:Name="frase_3" Content="Frase 3" HorizontalAlignment="Left" Margin="339,100,0,0" VerticalAlignment="Top" Width="78"/>
+        <Button x:Name="frase_1" Content="Frase 1" HorizontalAlignment="Left" Margin="33,100,0,0" VerticalAlignment="Top" Width="78" Click="frase_1_Click"/>
+        <Button x:Name="frase_2" Content="Frase 2" HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Top" Width="78" IsEnabled="False" Click="frase_2_Click"/>
+        <Button x:Name="frase_3" Content="Frase 3" HorizontalAlignment="Left" Margin="339,100,0,0" VerticalAlignment="Top" Width="78" IsEnabled="False" Click="frase_3_Click"/>
 
-        <Button x:Name="frase_4" Content="Frase 1" HorizontalAlignment="Left" Margin="33,200,0,0" VerticalAlignment="Top" Width="78"/>
-        <Button x:Name="frase_5" Content="Frase 2" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" Width="78"/>
-        <Button x:Name="unir" Content="Unir" HorizontalAlignment="Left" Margin="339,200,0,0" VerticalAlignment="Top" Width="78"/>
+        <Button x:Name="frase_4" Content="Frase 4" HorizontalAlignment="Left" Margin="33,200,0,0" VerticalAlignment="Top" Width="78" IsEnabled="False" Click="frase_4_Click"/>
+        <Button x:Name="frase_5" Content="Frase 5" HorizontalAlignment="Center" Margin="0,200,0,0" VerticalAlignment="Top" Width="78" IsEnabled="False" Click="frase_5_Click"/>
+        <Button x:Name="unir" Content="Unir" HorizontalAlignment="Left" Margin="339,200,0,0" VerticalAlignment="Top" Width="78" IsEnabled="False" Click="unir_Click"/>
         
-        <Button x:Name="limpiar" Content="Limpiar" HorizontalAlignment="Center" Margin="0,278,0,0" VerticalAlignment="Top" Width="306"/>
-        <Button x:Name="salir" Content="Salir" HorizontalAlignment="Center" Margin="0,320,0,0" VerticalAlignment="Top" Width="306"/>
+        <Button x:Name="limpiar" Content="Limpiar" HorizontalAlignment="Center" Margin="0,278,0,0" VerticalAlignment="Top" Width="306" Click="limpiar_Click"/>
+        <Button x:Name="salir" Content="Salir" HorizontalAlignment="Center" Margin="0,320,0,0" VerticalAlignment="Top" Width="306" Click="salir_Click"/>
 
     </Grid>
 </Window>

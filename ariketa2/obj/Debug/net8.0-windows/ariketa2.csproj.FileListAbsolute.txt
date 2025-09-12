@@ -18,3 +18,4 @@ D:\interfazeen_garapena\U1\ariketa2\obj\Debug\net8.0-windows\refint\ariketa2.dll
 D:\interfazeen_garapena\U1\ariketa2\obj\Debug\net8.0-windows\ariketa2.pdb
 D:\interfazeen_garapena\U1\ariketa2\obj\Debug\net8.0-windows\ariketa2.genruntimeconfig.cache
 D:\interfazeen_garapena\U1\ariketa2\obj\Debug\net8.0-windows\ref\ariketa2.dll
+D:\interfazeen_garapena\U1\ariketa2\obj\Debug\net8.0-windows\ariketa2.sourcelink.json

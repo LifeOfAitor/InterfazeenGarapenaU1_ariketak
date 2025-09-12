@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ariketa2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69a149cb1665666ecf3da44c78df8e5abf720992")]
 [assembly: System.Reflection.AssemblyProductAttribute("ariketa2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ariketa2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
