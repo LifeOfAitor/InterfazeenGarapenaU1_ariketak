@@ -1,0 +1,20 @@
+﻿<Window x:Class="ariketa4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ariketa4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Usuario" HorizontalAlignment="Left" Margin="168,106,0,0" VerticalAlignment="Top" Width="123"/>
+        <Label Content="Contraseña" HorizontalAlignment="Left" Margin="168,179,0,0" VerticalAlignment="Top" Width="123"/>
+        <TextBox x:Name="usuario_textbox" HorizontalAlignment="Left" Margin="323,106,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="344" Height="26"/>
+        <Button x:Name="aceptar_btn" Content="Aceptar" HorizontalAlignment="Left" Margin="156,303,0,0" VerticalAlignment="Top" Width="111" Click="aceptar_btn_Click"/>
+        <Button x:Name="limpiar_btn" Content="Limpiar" HorizontalAlignment="Left" Margin="355,303,0,0" VerticalAlignment="Top" Width="111" Click="limpiar_btn_Click"/>
+        <Button x:Name="salir_btn" Content="Salir" HorizontalAlignment="Left" Margin="556,303,0,0" VerticalAlignment="Top" Width="111" Click="salir_btn_Click"/>
+        <Label x:Name="erantzuna" Content="" HorizontalAlignment="Left" Margin="168,368,0,0" VerticalAlignment="Top" Width="480"/>
+        <PasswordBox x:Name="contrasena_textbox" HorizontalAlignment="Left" Margin="323,179,0,0" VerticalAlignment="Top" Width="344" Height="26"/>
+
+    </Grid>
+</Window>
