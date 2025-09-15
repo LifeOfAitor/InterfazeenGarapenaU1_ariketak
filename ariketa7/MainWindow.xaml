@@ -1,0 +1,33 @@
+﻿<Window x:Class="ariketa7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ariketa7"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="450">
+    <Grid Background="Gainsboro">
+        <TextBox x:Name="txtBox_erantzuna" HorizontalAlignment="Center" Margin="0,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="351" Height="41" Background="#FFFF7221" FontWeight="Bold" FontSize="30" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+        <Button x:Name="btn7" Content="7" HorizontalAlignment="Left" Margin="49,112,0,0" VerticalAlignment="Top" Height="40" Width="40" IsEnabled="False" Click="btn7_Click"/>
+        <Button x:Name="btn8" Content="8" HorizontalAlignment="Left" Margin="110,112,0,0" VerticalAlignment="Top" Height="40" Width="40" IsEnabled="False" Click="btn8_Click"/>
+        <Button x:Name="btn9" Content="9" HorizontalAlignment="Left" Margin="173,112,0,0" VerticalAlignment="Top" Height="40" Width="40" IsEnabled="False" Click="btn9_Click"/>
+        <Button x:Name="btn4" Content="4" HorizontalAlignment="Left" Margin="49,177,0,0" VerticalAlignment="Top" Height="40" Width="40" IsEnabled="False" Click="btn4_Click"/>
+        <Button x:Name="btn5" Content="5" HorizontalAlignment="Left" Margin="110,177,0,0" VerticalAlignment="Top" Height="40" Width="40" IsEnabled="False" Click="btn5_Click"/>
+        <Button x:Name="btn6" Content="6" HorizontalAlignment="Left" Margin="173,177,0,0" VerticalAlignment="Top" Height="40" Width="40" IsEnabled="False" Click="btn6_Click"/>
+        <Button x:Name="btn1" Content="1" HorizontalAlignment="Left" Margin="49,244,0,0" VerticalAlignment="Top" Height="40" Width="40" IsEnabled="False" Click="btn1_Click"/>
+        <Button x:Name="btn2" Content="2" HorizontalAlignment="Left" Margin="110,244,0,0" VerticalAlignment="Top" Height="40" Width="40" IsEnabled="False" Click="btn2_Click"/>
+        <Button x:Name="btn3" Content="3" HorizontalAlignment="Left" Margin="173,244,0,0" VerticalAlignment="Top" Height="40" Width="40" IsEnabled="False" Click="btn3_Click"/>
+        <Button x:Name="btn0" Content="0" HorizontalAlignment="Left" Margin="49,321,0,0" VerticalAlignment="Top" Height="40" Width="101" IsEnabled="False"/>
+        <Button x:Name="btnDedcimal" Content="." HorizontalAlignment="Left" Margin="173,321,0,0" VerticalAlignment="Top" Height="40" Width="40" IsEnabled="False" Click="btnDedcimal_Click"/>
+        <Button x:Name="btnC" Content="C" HorizontalAlignment="Left" Margin="300,112,0,0" VerticalAlignment="Top" Height="40" Width="40" IsEnabled="False" Click="btnC_Click"/>
+        <Button x:Name="btnCE" Content="CE" HorizontalAlignment="Left" Margin="360,112,0,0" VerticalAlignment="Top" Height="40" Width="40" IsEnabled="False" Click="btnCE_Click"/>
+        <Button x:Name="btn_zatiketa" Content="/" HorizontalAlignment="Left" Margin="300,177,0,0" VerticalAlignment="Top" Height="40" Width="40" IsEnabled="False" Click="btn_zatiketa_Click"/>
+        <Button x:Name="btn_kenketa" Content="-" HorizontalAlignment="Left" Margin="360,177,0,0" VerticalAlignment="Top" Height="40" Width="40" IsEnabled="False" Click="btn_kenketa_Click"/>
+        <Button x:Name="btn_biderketa" Content="X" HorizontalAlignment="Left" Margin="300,244,0,0" VerticalAlignment="Top" Height="40" Width="40" IsEnabled="False" Click="btn_biderketa_Click"/>
+        <Button x:Name="btn_gehiketa" Content="+" HorizontalAlignment="Left" Margin="360,244,0,0" VerticalAlignment="Top" Height="40" Width="40" IsEnabled="False" Click="btn_gehiketa_Click"/>
+        <Button x:Name="btn_berdin" Content="=" HorizontalAlignment="Left" Margin="300,321,0,0" VerticalAlignment="Top" Height="40" Width="40" IsEnabled="False" Click="btn_berdin_Click"/>
+        <Button x:Name="btn_porciento" Content="%" HorizontalAlignment="Left" Margin="360,321,0,0" VerticalAlignment="Top" Height="40" Width="40" IsEnabled="False" Click="btn_porciento_Click"/>
+        <Button  x:Name="encender" Content="ON/OFF" HorizontalAlignment="Left" Margin="300,366,0,0" VerticalAlignment="Top" Height="34" Width="100" Click="encender_Click" Background="#FFFF7221"/>
+
+    </Grid>
+</Window>
