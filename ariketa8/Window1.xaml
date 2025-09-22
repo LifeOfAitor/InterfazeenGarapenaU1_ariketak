@@ -1,0 +1,16 @@
+﻿<Window x:Class="ariketa8.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ariketa8"
+        mc:Ignorable="d"
+        Title="Funcion diferencia fechas" Height="150" Width="400">
+    <Grid>
+        <Label x:Name="label_texto" Content="Ingrese la fecha inicial con el formato dd/mm/aaaa"/>
+        <TextBox x:Name="txtBox_fechaIntroducida" HorizontalAlignment="Center" Margin="0,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="380"/>
+        <Button x:Name="btn_aceptar" Content="Aceptar" HorizontalAlignment="Left" Margin="306,10,0,0" VerticalAlignment="Top" Height="30" Width="84" Click="btn_aceptar_Click"/>
+        <Button x:Name="btn_cancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="306,55,0,0" VerticalAlignment="Top" Height="30" Width="84" Click="btn_cancelar_Click"/>
+
+    </Grid>
+</Window>
