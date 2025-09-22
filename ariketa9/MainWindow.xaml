@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Lista de amigos" Height="560" Width="500">
     <Grid>
-        <ListBox x:Name="list_box_lista" Width="200" Margin="70,72,230,243" SelectionChanged="text_box_lista_SelectionChanged"/>
+        <ListBox x:Name="list_box_lista" Width="200" Margin="70,72,230,243" SelectionChanged="list_box_lista_SelectionChanged"/>
         <Label Content="Lista de amigos" HorizontalAlignment="Left" Margin="70,31,0,0" VerticalAlignment="Top" Width="200"/>
         <TextBox x:Name="text_box_seleccionado" HorizontalAlignment="Left" Margin="70,355,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200" Height="31" IsEnabled="False"/>
         <Label Content="Amigo seleccionado" HorizontalAlignment="Left" Margin="70,324,0,0" VerticalAlignment="Top" Width="200"/>
