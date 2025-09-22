@@ -35,8 +35,15 @@ namespace ariketa9
         {
             if (!string.IsNullOrEmpty(text_box_nuevo.Text))
             {
-                list_box_lista.Items.Add(text_box_nuevo.Text.Trim());
-                text_box_nuevo.Clear();
+                if (!list_box_lista.Items.Contains(text_box_nuevo.Text)){
+                    list_box_lista.Items.Add(text_box_nuevo.Text.Trim());
+                    text_box_nuevo.Clear();
+                }
+                else
+                {
+                    MessageBox.Show("Ese nombre ya esta en la lista");
+                }
+                
             }
             else
             {
@@ -44,13 +51,13 @@ namespace ariketa9
             }
         }
 
-        private void text_box_lista_SelectionChanged(object sender, RoutedEventArgs e)
+        private void list_box_lista_SelectionChanged(object sender, SelectionChangedEventArgs e)
+
         {
             if (list_box_lista.SelectedItem != null)
             {
                 text_box_seleccionado.Text = list_box_lista.SelectedItem.ToString();
             }
-            
         }
 
 
