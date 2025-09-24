@@ -1,0 +1,26 @@
+﻿<Window x:Class="ariketa10.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ariketa10"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="800">
+    <Grid>
+        <Label Content="MIS IMAGENES" HorizontalAlignment="Left" Margin="332,40,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontSize="20" FontWeight="Bold"/>
+        <Label Content="1º FILA" HorizontalAlignment="Left" Margin="65,117,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <ComboBox x:Name="comfo_fila_uno" HorizontalAlignment="Left" Margin="65,148,0,0" VerticalAlignment="Top" Width="119" Height="29" SelectionChanged="comfo_fila_uno_SelectionChanged"/>
+        <Label Content="2º FILA" HorizontalAlignment="Left" Margin="65,217,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <CheckBox x:Name="combo_img_4" Content="Imagen 4" HorizontalAlignment="Left" Margin="77,256,0,0" VerticalAlignment="Top" FontSize="15" Checked="combo_img_4_Checked" Unchecked="combo_img_4_Unchecked"/>
+        <CheckBox x:Name="combo_img_5" Content="Imagen 5" HorizontalAlignment="Left" Margin="77,280,0,0" VerticalAlignment="Top" FontSize="15" Checked="combo_img_5_Checked" Unchecked="combo_img_5_Unchecked"/>
+        <CheckBox x:Name="combo_img_6" Content="Imagen 6" HorizontalAlignment="Left" Margin="77,304,0,0" VerticalAlignment="Top" FontSize="15" Checked="combo_img_6_Checked" Unchecked="combo_img_6_Unchecked"/>
+        <Button x:Name="btn_salir" Content="Salir" HorizontalAlignment="Left" Margin="651,377,0,0" VerticalAlignment="Top" Height="33" Width="91" Click="btn_salir_Click"/>
+        <Image x:Name="img_1" HorizontalAlignment="Left" Height="100" Margin="300,120,0,0" VerticalAlignment="Top" Width="100" Source="/matam-jaswanth-LyPq-Bq97kM-unsplash.jpg" Visibility="Hidden"/>
+        <Image x:Name="img_2" HorizontalAlignment="Left" Height="100" Margin="450,120,0,0" VerticalAlignment="Top" Width="100" Source="/tracy-adams-qvsM28o-k3Y-unsplash.jpg" Visibility="Hidden"/>
+        <Image x:Name="img_3" HorizontalAlignment="Left" Height="100" Margin="600,120,0,0" VerticalAlignment="Top" Width="100" Source="/ben-kolde-Ajcipx1VDXI-unsplash.jpg" Visibility="Hidden"/>
+        <Image x:Name="img_4" HorizontalAlignment="Left" Height="100" Margin="300,240,0,0" VerticalAlignment="Top" Width="100" Source="/goran-ivos-T8LMIN09-mo-unsplash.jpg" Visibility="Hidden"/>
+        <Image x:Name="img_5" HorizontalAlignment="Left" Height="100" Margin="450,240,0,0" VerticalAlignment="Top" Width="100" Source="/pakata-goh-APqwhxH4TM4-unsplash.jpg" Visibility="Hidden"/>
+        <Image x:Name="img_6" HorizontalAlignment="Left" Height="100" Margin="600,240,0,0" VerticalAlignment="Top" Width="100" Source="/caitlin-greene-QDM6-fFKP0s-unsplash.jpg" Visibility="Hidden"/>
+
+    </Grid>
+</Window>

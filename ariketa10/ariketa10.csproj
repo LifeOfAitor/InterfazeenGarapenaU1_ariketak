@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ben-kolde-Ajcipx1VDXI-unsplash.jpg" />
+    <None Remove="caitlin-greene-QDM6-fFKP0s-unsplash.jpg" />
+    <None Remove="goran-ivos-T8LMIN09-mo-unsplash.jpg" />
+    <None Remove="matam-jaswanth-LyPq-Bq97kM-unsplash.jpg" />
+    <None Remove="pakata-goh-APqwhxH4TM4-unsplash.jpg" />
+    <None Remove="tracy-adams-qvsM28o-k3Y-unsplash.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="ben-kolde-Ajcipx1VDXI-unsplash.jpg" />
+    <Resource Include="caitlin-greene-QDM6-fFKP0s-unsplash.jpg" />
+    <Resource Include="goran-ivos-T8LMIN09-mo-unsplash.jpg" />
+    <Resource Include="matam-jaswanth-LyPq-Bq97kM-unsplash.jpg" />
+    <Resource Include="pakata-goh-APqwhxH4TM4-unsplash.jpg" />
+    <Resource Include="tracy-adams-qvsM28o-k3Y-unsplash.jpg" />
+  </ItemGroup>
+
+</Project>
