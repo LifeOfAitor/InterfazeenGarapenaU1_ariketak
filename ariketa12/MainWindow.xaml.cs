@@ -9,12 +9,12 @@ namespace ariketa12
         private const double GOSARIA = 3;
         private const double BAZKARIA = 9;
         private const double AFARIA = 15.5;
-        private const double KM_RATE = 0.25;
+        private const double KM_EGINDA = 0.25;
         private const double BIDAIA_ORDUA = 18;
         private const double LAN_ORDUA = 42;
 
-            
-        public MainWindow()             // FALTA ActualizarTotalGeneral y gestionar errores
+
+        public MainWindow()
         {
             InitializeComponent();
         }
@@ -33,32 +33,25 @@ namespace ariketa12
                     focusedElement.MoveFocus(request);
             }
         }
-        private void Dietas_LostFocus(object sender, RoutedEventArgs e)
+        private void Entrada_LostFocus(object sender, RoutedEventArgs e)
         {
             // Cuando el foco salga de cualquiera de los checkboxes de dietas, recalculamos
-            double totalDietas = CalcularTotalDietas();
-            text_box_total_dietas.Text = totalDietas.ToString();
-            ActualizarTotalGeneral(totalDietas);
+            ActualizarTotalGeneral();
         }
-        private void Viaje_LostFocus(object sender, RoutedEventArgs e)
+        private void ActualizarTotalGeneral()
         {
-            // Cuando el foco salga de cualquiera de los checkboxes de dietas, recalculamos
-            double totalViaje = CalcularTotalDietas();
-            text_box_total_viaje.Text = CalcularTotalViaje().ToString();
-            ActualizarTotalGeneral(totalViaje);
-        }
-        private void Trabajo_LostFocus(object sender, RoutedEventArgs e)
-        {
-            // Cuando el foco salga de cualquiera de los checkboxes de dietas, recalculamos
-            double totalTrabajo = CalcularTotalDietas();
-            text_box_total_trabajo.Text = totalTrabajo.ToString();
-            ActualizarTotalGeneral(totalTrabajo);
+            double dietas = CalcularTotalDietas();
+            double viaje = CalcularTotalViaje();
+            double trabajo = CalcularTotalTrabajo();
+
+            text_box_total_dietas.Text = dietas.ToString();
+            text_box_total_viaje.Text = viaje.ToString();
+            text_box_total_trabajo.Text = trabajo.ToString();
+
+            double totalGeneral = dietas + viaje + trabajo;
+            text_box_total.Text = totalGeneral.ToString();
         }
 
-        private void ActualizarTotalGeneral(double total_add)
-        {
-
-        }
 
 
         private void btn_limpiar_Click(object sender, RoutedEventArgs e)
@@ -101,29 +94,21 @@ namespace ariketa12
 
         private double CalcularTotalViaje()
         {
-            if (double.TryParse(text_box_km.Text, out double km) &&
-                double.TryParse(text_box_bidaia_orduak.Text, out double orduak))
-            {
-                return (km * KM_RATE) + (orduak * BIDAIA_ORDUA);
-            }
-            else
-            {
-                MessageBox.Show("Por favor, introduce solo números válidos para Km y Horas de viaje.");
-                return 0;
-            }
+            double km = LeerDouble(text_box_km.Text);
+            double orduak = LeerDouble(text_box_bidaia_orduak.Text);
+            return (km * KM_EGINDA) + (orduak * BIDAIA_ORDUA);
         }
 
         private double CalcularTotalTrabajo()
         {
-            if (double.TryParse(text_box_lan_orduak.Text, out double lanOrduak))
-            {
-                return lanOrduak * LAN_ORDUA;
-            }
-            else
-            {
-                MessageBox.Show("Por favor, introduce solo números válidos para Horas de trabajo.");
-                return 0;
-            }
+            double orduak = LeerDouble(text_box_lan_orduak.Text);
+            return orduak * LAN_ORDUA;
+        }
+
+        private double LeerDouble(string input)
+        {
+            // en una sola linea... si es un numero y positivo guay, sino 0
+            return double.TryParse(input, out double valor) && valor > 0 ? valor : 0;
         }
 
         private void btn_calcular_Click(object sender, RoutedEventArgs e)
@@ -132,12 +117,12 @@ namespace ariketa12
             double viaje = CalcularTotalViaje();
             double trabajo = CalcularTotalTrabajo();
 
-            text_box_total_dietas.Text = dietas.ToString("F2");
-            text_box_total_viaje.Text = viaje.ToString("F2");
-            text_box_total_trabajo.Text = trabajo.ToString("F2");
+            text_box_total_dietas.Text = dietas.ToString();
+            text_box_total_viaje.Text = viaje.ToString();
+            text_box_total_trabajo.Text = trabajo.ToString();
 
             double total = dietas + viaje + trabajo;
-            text_box_total.Text = total.ToString("F2");
+            text_box_total.Text = total.ToString();
         }
     }
 }
