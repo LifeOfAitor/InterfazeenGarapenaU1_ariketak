@@ -20,5 +20,45 @@ namespace ariketa13
         {
             InitializeComponent();
         }
+
+        private void item_salir_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void cortar_Click(object sender, RoutedEventArgs e)
+        {
+            Clipboard.SetText(textBoxEditor.Text);
+            textBoxEditor.Clear();
+        }
+
+        private void copiar_Click(object sender, RoutedEventArgs e)
+        {
+            Clipboard.SetText(textBoxEditor.Text);
+        }
+        private void pegar_Click(object sender, RoutedEventArgs e)
+        {
+            textBoxEditor.Text += Clipboard.GetText();
+        }
+        private void eliminar_Click(object sender, RoutedEventArgs e)
+        {
+            textBoxEditor.Clear();
+        }
+        private void arial_Click(object sender, RoutedEventArgs e)
+        {
+            textBoxEditor.FontFamily = new FontFamily("Arial");
+        }
+        private void courier_Click(object sender, RoutedEventArgs e)
+        {
+            textBoxEditor.FontFamily = new FontFamily("Courier");
+        }
+        private void impact_Click(object sender, RoutedEventArgs e)
+        {
+            textBoxEditor.FontFamily = new FontFamily("Impact");
+        }
+        private void symbol_Click(object sender, RoutedEventArgs e)
+        {
+            textBoxEditor.FontFamily = new FontFamily("Symbol");
+        }
     }
 }

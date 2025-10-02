@@ -9,20 +9,19 @@
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="Archivo">
-                <MenuItem x:Name="item_salir" Header="Salir"/>
-                <TextBox x:Name="item_type_archivo" TextWrapping="Wrap" Text="Escribe aqui"/>
+                <MenuItem x:Name="item_salir" Header="Salir" Click="item_salir_Click"/>
             </MenuItem>
             <MenuItem Header="Editar">
-                <MenuItem Header="Cortar     Ctrl+X" />
-                <MenuItem Header="Copiar     Ctrl+C" />
-                <MenuItem Header="Pegar      Ctrl+V" />
-                <MenuItem Header="Eliminar   Del" />
+                <MenuItem Header="Cortar     Ctrl+X" Click="cortar_Click"/>
+                <MenuItem Header="Copiar     Ctrl+C" Click="copiar_Click"/>
+                <MenuItem Header="Pegar      Ctrl+V" Click="pegar_Click"/>
+                <MenuItem Header="Eliminar   Del" Click="eliminar_Click"/>
             </MenuItem>
             <MenuItem Header="Fuente">
-                <MenuItem Header="Ariel" />
-                <MenuItem Header="Courier" />
-                <MenuItem Header="Impact" />
-                <MenuItem Header="Symbol" />
+                <MenuItem Header="Arial" Click="arial_Click"/>
+                <MenuItem Header="Courier" Click="courier_Click"/>
+                <MenuItem Header="Impact" Click="impact_Click"/>
+                <MenuItem Header="Symbol" Click="symbol_Click"/>
             </MenuItem>
         </Menu>
         <Grid>
@@ -35,6 +34,5 @@
                  FontSize="14"
                  Margin="5"/>
         </Grid>
-        <!-- Content for the rest of your window -->
     </DockPanel>
 </Window>
